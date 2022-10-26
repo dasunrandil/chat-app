@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.MainFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="552.0" prefWidth="545.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <JFXTextArea fx:id="txtOutput" layoutX="23.0" layoutY="23.0" prefHeight="374.0" prefWidth="309.0" unFocusColor="WHITE" />
+      <JFXTextArea fx:id="txtMessage" layoutX="23.0" layoutY="452.0" prefHeight="71.0" prefWidth="309.0" promptText="Enter your message here! " unFocusColor="WHITE" />
+      <JFXButton fx:id="btnSend" layoutX="375.0" layoutY="461.0" prefHeight="53.0" prefWidth="132.0" style="-fx-background-color: #50de40;" text="SEND" textFill="WHITE">
+         <font>
+            <Font name="Cantarell Extra Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXListView fx:id="lstUsers" layoutX="369.0" layoutY="23.0" prefHeight="374.0" prefWidth="152.0" />
+   </children>
 </AnchorPane>

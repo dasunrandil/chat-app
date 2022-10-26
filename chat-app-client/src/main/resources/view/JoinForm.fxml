@@ -8,21 +8,24 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<AnchorPane prefHeight="300.0" prefWidth="472.0" style="-fx-background-color: grey;" stylesheets="../css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.JoinFormController">
 
-<AnchorPane prefHeight="300.0" prefWidth="472.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.JoinFormController">
    <children>
       <Label layoutX="103.0" layoutY="38.0" text="Welcome to Chat App !" textFill="#1923ae">
          <font>
             <Font name="Cantarell Extra Bold" size="22.0" />
          </font>
       </Label>
-      <JFXTextField alignment="CENTER" focusColor="#284bb5" layoutX="29.0" layoutY="103.0" prefHeight="26.0" prefWidth="423.0" promptText="Enter Server IP " unFocusColor="WHITE" />
-      <JFXTextField alignment="CENTER" layoutX="29.0" layoutY="168.0" prefHeight="26.0" prefWidth="423.0" promptText="Enter Your Name" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtServerIP" alignment="CENTER" focusColor="#284bb5" layoutX="29.0" layoutY="103.0" prefHeight="26.0" prefWidth="423.0" promptText="Enter Server IP " style="color: white;" stylesheets="@../css/style.css" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtName" alignment="CENTER" layoutX="29.0" layoutY="168.0" prefHeight="26.0" prefWidth="423.0" promptText="Enter Your Name" unFocusColor="WHITE" />
       <ImageView fitHeight="47.0" fitWidth="56.0" layoutX="353.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/icon.png" />
          </image>
       </ImageView>
-      <JFXButton alignment="CENTER" layoutX="180.0" layoutY="235.0" prefHeight="36.0" prefWidth="122.0" style="-fx-background-color: #50de40;" text="JOIN" textFill="WHITE" />
+      <JFXButton fx:id="btnJoin" alignment="CENTER" layoutX="180.0" layoutY="235.0" prefHeight="36.0" prefWidth="122.0" style="-fx-background-color: #50de40;" text="JOIN" textFill="WHITE">
+         <font>
+            <Font name="Cantarell Extra Bold" size="13.0" />
+         </font></JFXButton>
    </children>
 </AnchorPane>
